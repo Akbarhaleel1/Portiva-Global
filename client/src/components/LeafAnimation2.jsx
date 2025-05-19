@@ -31,7 +31,7 @@ const LeafAnimationVersion2 = () => {
       <style>{keyframes}</style>
       <div className="leaf" style={leafStyle}>
         <img 
-          src="src/assets/images/leaf.png" 
+          src="/images/leaf.png" 
           alt="Falling leaf" 
           style={imgStyle}
         />

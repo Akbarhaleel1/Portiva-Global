@@ -10,7 +10,7 @@ const TypographyShowcase = () => {
       <div className="absolute top-4 md:top-6 lg:top-8 right-4 md:right-6 lg:right-12">
         <div className="w-8 md:w-10 lg:w-12 h-10 md:h-14 lg:h-16 rounded-full">  
           <img 
-            src="src/assets/images/leaf.png"
+            src="/images/leaf.png"
             alt="Assorted spices in a bowl" 
             className="w-full h-full object-contain" 
             onError={(e) => {
@@ -47,7 +47,7 @@ const TypographyShowcase = () => {
         <div className="w-full sm:w-2/3 lg:w-1/3 xl:w-1/4 flex justify-center order-1 md:order-2 lg:mr-12 xl:mr-60"> 
           <div className="w-48 sm:w-64 md:w-72 lg:w-64 xl:w-80 h-36 sm:h-48 md:h-56 lg:h-64 xl:h-72 rounded-full overflow-hidden relative mx-auto ">
             <img 
-              src="src/assets/images/cinamons.png" 
+              src="/images/cinamons.png" 
               alt="Assorted spices in a bowl" 
               className="absolute w-full h-[90%] object-cover top-1/2 left-1/2 sm:left-1/2 md:left-28 lg:left-32 xl:left-36 transform -translate-x-1/2 -translate-y-1/2" 
               onError={(e) => {

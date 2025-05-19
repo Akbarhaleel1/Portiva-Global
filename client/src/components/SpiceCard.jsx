@@ -106,37 +106,37 @@ const SpiceCardGrid = () => {
       id: 1,
       title: "Cardamom",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: 'src/assets/images/product1.jpg'
+      image: '/images/product1.jpg'
     },
     {
       id: 2,
       title: "Cinnamon",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: 'src/assets/images/product2.jpg'
+      image: '/images/product2.jpg'
     },
     {
       id: 3,
       title: "Clove",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: 'src/assets/images/product3.jpg'
+      image: '/images/product3.jpg'
     },
     {
       id: 4,
       title: "Bay leaf",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: 'src/assets/images/product4.jpg'
+      image: '/images/product4.jpg'
     },
     {
       id: 5,
       title: "Black Pepper",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: 'src/assets/images/product5.jpg'
+      image: '/images/product5.jpg'
     },
     {
       id: 6,
       title: "Star anise",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: 'src/assets/images/product6.jpg'
+      image: '/images/product6.jpg'
     }
   ];
 

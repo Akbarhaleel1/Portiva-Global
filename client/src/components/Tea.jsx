@@ -30,11 +30,11 @@ const Tea = () => {
                         <div className="md:w-1/2 bg-emerald-100 relative h-64 md:h-auto">
                             <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/20 to-transparent"></div>
                             <img
-                                src="src/assets/images/tea"
+                                src="/images/tea"
                                 alt="Tea Ceremony"
                                 className="w-full h-[520px] object-cover"
                                 onError={(e) => {
-                                    e.target.src = "src/assets/images/teaLeaf.jpg";
+                                    e.target.src = "/images/teaLeaf.jpg";
                                 }}
                             />
                             <div className="absolute bottom-4 left-4 bg-emerald-800/80 text-white px-3 py-1 rounded-lg text-sm">
@@ -80,11 +80,11 @@ const Tea = () => {
                         <div className="md:w-1/2 bg-amber-100 relative h-64 md:h-auto">
                             <div className="absolute inset-0 bg-gradient-to-l from-amber-600/20 to-transparent"></div>
                             <img
-                                src="src/assets/images/4.jpg"
+                                src="/images/4.jpg"
                                 alt="Tea Brewing"
                                 className="w-full h-[520px] object-cover"
                                 onError={(e) => {
-                                    e.target.src = "src/assets/images/tea-placeholder.jpg";
+                                    e.target.src = "/images/tea-placeholder.jpg";
                                 }}
                             />
                             <div className="absolute bottom-4 right-4 bg-amber-800/80 text-white px-3 py-1 rounded-lg text-sm">

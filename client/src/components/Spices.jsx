@@ -25,30 +25,30 @@ const Spices = () => {
         id: 1,
         name: "CLOVES",
         description: "Premium quality cloves with rich aroma and flavor, carefully selected and purified using advanced methods Fresh green cardamom pods with intense fragrance, perfect for both sweet and savory dishes.",
-        image: "src/assets/images/cloves.png",
-        scatteredImage: "src/assets/images/cloves-scattered.png",
+        image: "/images/cloves.png",
+        scatteredImage: "/images/cloves-scattered.png",
         position: "left"
       },
       {
         id: 2,
         name: "CARDAMOM",
         description: "Fresh green cardamom pods with intense fragrance, perfect for both sweet and savory dishes.",
-        image: "src/assets/images/CARDAMOM.png",
+        image: "/images/CARDAMOM.png",
         position: "top"
       },
       {
         id: 3, 
         name: "CINNAMON",
         description: "Pure Ceylon cinnamon sticks with sweet woody flavor and health benefits.",
-        image: "src/assets/images/CINNAMON.png",
+        image: "/images/CINNAMON.png",
         position: "center"
       },
       {
         id: 4,
         name: "BLACK PEPPER",
         description: "Premium quality cloves with rich aroma and flavor, carefully selected and purified using advanced methods Fresh green cardamom pods with intense fragrance, perfect for both sweet and savory dishes.",
-        image: "src/assets/images/cloves.png",
-        scatteredImage: "src/assets/images/pepper-scattered.png",
+        image: "/images/cloves.png",
+        scatteredImage: "/images/pepper-scattered.png",
         position: "right"
       }
     ];
@@ -74,7 +74,7 @@ const Spices = () => {
           {/* Main red-blasting image */}
           <div className="absolute left-1/2 transform -translate-x-1/2 top-0 w-[120%] max-w-[400px] z-0">
             <img
-              src="src/assets/images/red-blasting.png"
+              src="/images/red-blasting.png"
               alt="Main spice"
               className="w-full h-auto rounded-lg"
             />
@@ -95,7 +95,7 @@ const Spices = () => {
           {/* Center images */}
           <div className="absolute left-[25%] top-[18%] w-24 z-10">
             <img
-              src="src/assets/images/center image.png"
+              src="/images/center image.png"
               alt="Spice 1"
               className="w-full h-auto rounded-lg"
             />
@@ -103,7 +103,7 @@ const Spices = () => {
 
           <div className="absolute left-[52%] top-[25%] w-24 z-10">
             <img
-              src="src/assets/images/center image.png"
+              src="/images/center image.png"
               alt="Spice 2"
               className="w-full h-auto rounded-lg"
             />
@@ -115,7 +115,7 @@ const Spices = () => {
           {/* Main red-blasting image */}
           <div className="absolute left-1/2 transform -translate-x-1/2 top-[-240px] w-[900px] z-0">
             <img
-              src="src/assets/images/red-blasting.png"
+              src="/images/red-blasting.png"
               alt="Main spice"
               className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300"
             />
@@ -124,7 +124,7 @@ const Spices = () => {
           {/* Peanuts image - top right */}
           <div className="absolute right-0 top-[-110px] w-64 z-10">
             <img
-              src="src/assets/images/penuts.png"
+              src="/images/penuts.png"
               alt="Scattered Spices"
               className="w-full h-auto rounded-lg hover:scale-105 rotate-180 transition-all duration-300"
             />
@@ -145,7 +145,7 @@ const Spices = () => {
           {/* Center images */}
           <div className="absolute left-1/3 top-16 w-56 z-10">
             <img
-              src="src/assets/images/center image.png"
+              src="/images/center image.png"
               alt="Spice 1"
               className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300"
             />
@@ -153,7 +153,7 @@ const Spices = () => {
 
           <div className="absolute left-1/2 top-32 w-56 z-10">
             <img
-              src="src/assets/images/center image.png"
+              src="/images/center image.png"
               alt="Spice 2"
               className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300"
             />
@@ -162,28 +162,28 @@ const Spices = () => {
           {/* Leaves */}
           <div className="absolute left-36 top-32 w-24 z-10">
             <img
-              src="src/assets/images/leaf.png"
+              src="/images/leaf.png"
               alt="Leaf"
               className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300"
             />
           </div>
           <div className="absolute left-36 top-[450px] w-24 z-10">
             <img
-              src="src/assets/images/leaf2.png"
+              src="/images/leaf2.png"
               alt="Leaf"
               className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300"
             />
           </div>
           <div className="absolute right-28 top-96 w-24 z-10">
             <img
-              src="src/assets/images/leaf2.png"
+              src="/images/leaf2.png"
               alt="Leaf"
               className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300"
             />
           </div>
           <div className="absolute right-36 top-10 w-24 z-10">
             <img
-              src="src/assets/images/leaf.png"
+              src="/images/leaf.png"
               alt="Leaf"
               className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300"
             />

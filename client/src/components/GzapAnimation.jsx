@@ -19,7 +19,7 @@ const GzapAnimation = () => {
       title: "Premium Cardamom",
       description: "8mm+ premium, split, and medium grades of handpicked green cardamom",
       detailedDescription: "Our premium cardamom is sourced from the finest plantations in Guatemala, handpicked at peak ripeness to ensure maximum flavor and aroma",
-      image: "src/assets/images/product1.jpg",
+      image: "/images/product1.jpg",
       badge: "Premium Export",
       specs: [
         "Origin: Guatemala Highlands",
@@ -38,7 +38,7 @@ const GzapAnimation = () => {
       title: "Ceylon Cinnamon",
       description: "Authentic Ceylon cinnamon sticks with intense aroma and delicate flavor",
       detailedDescription: "Genuine Ceylon cinnamon (Cinnamomum verum) from Sri Lanka, prized for its distinctive sweet and delicate flavor.",
-      image: "src/assets/images/product2.jpg",
+      image: "/images/product2.jpg",
       badge: "Grade A",
       specs: [
         "Origin: Sri Lanka",
@@ -58,7 +58,7 @@ const GzapAnimation = () => {
       title: "Specialty Coffee Beans",
       description: "Premium Arabica and Robusta beans sourced from high-altitude plantations",
       detailedDescription: "Directly sourced from high-altitude plantations in Ethiopia, Colombia, and Vietnam, our specialty coffee beans are handpicked at peak ripeness.",
-      image: "src/assets/images/product3.jpg",
+      image: "/images/product3.jpg",
       badge: "Single Origin",
       specs: [
         "Origins: Ethiopia, Colombia, Vietnam",
@@ -77,7 +77,7 @@ const GzapAnimation = () => {
       title: "Whole Cloves",
       description: "Hand-selected aromatic flower buds with intense flavor profiles",
       detailedDescription: "Our premium whole cloves are hand-selected from the finest Zanzibar and Madagascar harvests. ",
-      image: "src/assets/images/product4.jpg",
+      image: "/images/product4.jpg",
       badge: "Organic",
       specs: [
         "Origin: Zanzibar & Madagascar",
@@ -97,7 +97,7 @@ const GzapAnimation = () => {
       title: "Black Pepper & Star Anise",
       description: "Bold black peppercorns and distinctive star anise for global cuisine",
       detailedDescription: "Premium Tellicherry black peppercorns from India's Malabar Coast, known for their large size and complex flavor profile with citrusy top notes. ",
-      image: "src/assets/images/product5.jpg",
+      image: "/images/product5.jpg",
       badge: "Premium Quality",
       specs: [
         "Pepper Origin: Malabar, India",
@@ -115,7 +115,7 @@ const GzapAnimation = () => {
       title: "Camellia Sinensis",
       description: "Finest tea leaves harvested at peak freshness for exceptional brews",
       detailedDescription: "Premium tea leaves (Camellia sinensis) from renowned growing regions including Darjeeling, Assam, and Uji. ",
-      image: "src/assets/images/product6.jpg",
+      image: "/images/product6.jpg",
       badge: "Limited Harvest",
       specs: [
         "Origins: Darjeeling, Assam, Uji",
@@ -137,7 +137,7 @@ const GzapAnimation = () => {
       title: "Global Logistics",
       description: "Specialized Ocean & Air Freight services for agricultural exports",
       detailedDescription: "Our comprehensive logistics solutions ensure your agricultural products arrive in perfect condition, anywhere in the world. ",
-      image: "src/assets/images/product7.jpg",
+      image: "/images/product7.jpg",
       badge: "Worldwide Service",
       specs: [
         "Modes: Ocean, Air, Land",

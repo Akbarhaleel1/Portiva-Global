@@ -6,21 +6,21 @@ export default function WhyChooseUs() {
       number: "01",
       title: "Global Shipping Illustration 1",
       description: "With strong logistics partnerships in key countries, we ensure your spices, coffee, and tea products are delivered fresh, fast, and securely. Our global network means smooth customs, reliable timelines, and zero hassle.",
-      image: "src/assets/images/global images.jpg",
+      image: "/images/global images.jpg",
       icon: <Anchor className="h-6 w-6 text-teal-600" />
     },
     {
       number: "02",
       title: "Global Shipping Illustration 2",
       description: "From airtight packaging to precise documentation and customs clearance, we handle the full export journey. Our streamlined system ensures your premium products reach global markets without delays.",
-      image: "src/assets/images/exporting3.jpg",
+      image: "/images/exporting3.jpg",
       icon: <FileCheck className="h-6 w-6 text-teal-600" />
     },
     {
       number: "03",
       title: "Global Shipping Illustration 3",
       description: "We uphold the highest quality standards. Every shipment of spices, coffee, and tea passes strict checks and adheres to international regulations — protecting your brand and satisfying global buyers.",
-      image: "src/assets/images/hero section 2.jpg",
+      image: "/images/hero section 2.jpg",
       icon: <Shield className="h-6 w-6 text-teal-600" />
     }
   ];

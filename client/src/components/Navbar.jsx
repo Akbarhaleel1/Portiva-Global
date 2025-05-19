@@ -51,7 +51,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-gray-900 font-bold text-xl tracking-tight">
-              <img src="src/assets/images/first logo.jpg" alt="logo" className='w-12 rounded-full'/>
+              <img src="/images/first logo.jpg" alt="logo" className='w-12 rounded-full'/>
             </Link>
           </div>
           

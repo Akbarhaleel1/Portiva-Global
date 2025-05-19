@@ -109,7 +109,7 @@ export default function ExportServicesUI() {
                   playsInline
                   className="h-full w-full object-cover"
                 >
-                  <source src="src/assets/video/Hero_Section_Video.mp4" type="video/mp4" />
+                  <source src="/video/Hero_Section_Video.mp4" type="video/mp4" />
                   <div className="h-full w-full bg-cover bg-center" style={{ backgroundImage: "url('fallback-image.jpg')" }}></div>
                 </video>
 

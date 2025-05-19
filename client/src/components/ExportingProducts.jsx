@@ -112,7 +112,7 @@ const ExportingProducts = forwardRef((props, ref) => {
       {/* Flight image */}
       <img
         ref={flightRef}
-        src="src/assets/images/flight2-removebg-preview.png"
+        src="/images/flight2-removebg-preview.png"
         alt="flight"
         className={`w-64 h-auto left-1/2 bottom-20 top-64 transform -translate-x-1/2 origin-center ${
           isFixed ? 'fixed' : 'relative'
