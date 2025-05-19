@@ -40,7 +40,7 @@ const ExportingProducts = forwardRef((props, ref) => {
         start: "top top",
         end: "+=800",
         scrub: true,
-        markers: true,
+        markers: false,
         onLeave: () => {
           setIsFixed(false);
           gsap.set(flight, {
@@ -48,7 +48,6 @@ const ExportingProducts = forwardRef((props, ref) => {
             rotation: 90,
             scale: 2
           });
-          // Set text to final position when switching to relative
           gsap.set(text, {
             x: "20%",
             position: 'relative',

@@ -4,6 +4,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import GzapAnimation from "./GzapAnimation";
+import ExportingProducts from "./ExportingProducts";
 
 export default function ExportServicesUI() {
   const [isVisible, setIsVisible] = useState(false);
@@ -120,6 +121,9 @@ export default function ExportServicesUI() {
         </div>
       </div>
 
+        {/* <div className="overflow-y-auto h-screen">
+        <ExportingProducts ref={containerRef} />
+      </div> */}
       <div>
         <WhyChooseUs />
       </div>
