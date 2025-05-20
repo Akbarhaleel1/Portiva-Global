@@ -51,11 +51,8 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
           {/* Logo and Company Name */}
           <div className="flex-shrink-0 flex items-center gap-3">
             <Link to="/" className="flex items-center">
-              <img src="/images/first_logo-removebg-preview.png" alt="Portiva Global Logo" className="w-16 h-16 rounded-full object-contain" />
-              <div className="ml-2">
-                <span className="text-blue-600 font-bold text-xl tracking-wide">PORTIVA</span>
-                <span className="text-gray-800 font-semibold text-xl tracking-wide"> GLOBAL</span>
-              </div>
+              <img src="/images/pg logo.png" alt="Portiva Global Logo" className="w-20 h-20 rounded-full object-contain" />
+              <img src="/images/pg text.png" alt="Portiva Global Logo" className="w-80 mt-[-48px] ml-[-80px] rounded-full object-contain" />
             </Link>
           </div>
           
@@ -298,15 +295,6 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
             Contact Us
           </MobileNavLink>
           
-          {/* Mobile Sign In */}
-          <div className="pt-2">
-            <a
-              href="#"
-              className="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-200"
-            >
-              Sign In
-            </a>
-          </div>
         </div>
       </div>
     </nav>

@@ -1,5 +1,4 @@
 
-
 // import { useState, useEffect, useRef } from "react";
 // import { Globe, TrendingUp, Shield, Clock, ChevronRight, ArrowRight, MapPin, Users, BarChart } from "lucide-react";
 // import WhyChooseUs from "./WhyChooseUs";
@@ -17,7 +16,7 @@
 //     setIsVisible(true);
 //   }, []);
 
-//     const scrollToSection = () => {
+//   const scrollToSection = () => {
 //     exportSectionRef.current?.scrollIntoView({ behavior: "smooth" });
 //   };
 
@@ -75,9 +74,6 @@
 //       <div className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-blue-900 to-teal-900 text-white">
 //         {/* Animated background elements */}
 //         <div className="absolute inset-0 overflow-hidden">
-//           {/* World map grid pattern */}
-//           <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMSI+PHBhdGggZD0iTTM2IDM0YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0wIDEyYzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0wIDEyYzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0xMi0yNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAxMmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAxMmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==')]"></div>
-          
 //           {/* Animated shipping routes */}
 //           <div className="absolute inset-0">
 //             <div className="absolute top-1/4 left-1/5 w-1/2 h-px bg-gradient-to-r from-transparent via-teal-400 to-transparent opacity-30 animate-pulse"></div>
@@ -115,7 +111,6 @@
 //                 </span>
 //                 <span className="block text-3xl md:text-4xl font-semibold text-white/90 mt-4">
 //                   Exporting Nature&lsquo;s Finest - Tea, Coffee & Spices
-
 //                 </span>
 //               </h1>
 
@@ -139,163 +134,157 @@
 //                   <span className="font-bold">Start Exploring</span>
 //                   <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform" />
 //                 </button>
-                
 //               </div>
-
-//               {/* <div>
-                
-//                 <p className="text-sm font-medium text-teal-200 mb-4 tracking-wider">TRUSTED BY GLOBAL INDUSTRY LEADERS</p>
-//                 <div className="flex items-center space-x-6">
-//                   <div className="h-12 w-24 bg-white/10 rounded-md backdrop-blur-md flex items-center justify-center border border-white/10">
-//                     <span className="text-white/40 text-xs font-bold">LOGO 1</span>
-//                   </div>
-//                   <div className="h-12 w-28 bg-white/10 rounded-md backdrop-blur-md flex items-center justify-center border border-white/10">
-//                     <span className="text-white/40 text-xs font-bold">LOGO 2</span>
-//                   </div>
-//                   <div className="h-12 w-20 bg-white/10 rounded-md backdrop-blur-md flex items-center justify-center border border-white/10">
-//                     <span className="text-white/40 text-xs font-bold">LOGO 3</span>
-//                   </div>
-//                 </div>
-//               </div> */}
 //             </div>
 
-//             {/* Right side interactive export visualization */}
-//             <div className={`md:w-1/2 transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'}`}>
-//               <div className="relative">
-//                 {/* Decorative container elements */}
-//                 <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-gradient-to-br from-blue-600/20 to-transparent blur-xl"></div>
-//                 <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-gradient-to-br from-teal-600/20 to-transparent blur-xl"></div>
-                
-//                 {/* Main 3D-like container */}
-//                 <div className="relative z-10 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-6 shadow-2xl shadow-blue-900/40">
-//                   <div className="bg-gradient-to-br from-slate-800 to-blue-900 rounded-xl overflow-hidden">
-//                     {/* Interactive export map visualization */}
-//                     <div className="relative h-96 w-full">
-//                       {/* World map background */}
-//                       <div className="absolute inset-0 opacity-20">
-//                         {/* Simplified world map SVG representation */}
-//                         <svg viewBox="0 0 800 500" className="w-full h-full">
-//                           <path d="M110,200 Q150,180 200,190 T300,200 T400,180 T500,190 T600,200 T700,190"
-//                                 stroke="rgba(255,255,255,0.3)"
-//                                 fill="none"
-//                                 strokeWidth="1" />
-//                           <path d="M100,250 Q150,230 200,240 T300,250 T400,230 T500,240 T600,250 T700,240"
-//                                 stroke="rgba(255,255,255,0.3)"
-//                                 fill="none"
-//                                 strokeWidth="1" />
-//                           <path d="M150,300 Q200,280 250,290 T350,300 T450,280 T550,290 T650,300"
-//                                 stroke="rgba(255,255,255,0.3)"
-//                                 fill="none"
-//                                 strokeWidth="1" />
-//                         </svg>
-//                       </div>
-                      
-//                       {/* Interactive shipping container animation */}
-//                       <div className="absolute inset-0 flex items-center justify-center">
-//                         {/* Large rotating globe or world representation */}
-//                         <div className="relative w-64 h-64">
-//                           {/* Animated shipping routes flowing out from center */}
-//                           <div className="absolute inset-0">
-//                             <svg viewBox="0 0 200 200" className="w-full h-full">
-//                               <defs>
-//                                 <linearGradient id="routeGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-//                                   <stop offset="0%" stopColor="rgba(45, 212, 191, 0)" />
-//                                   <stop offset="50%" stopColor="rgba(45, 212, 191, 1)" />
-//                                   <stop offset="100%" stopColor="rgba(45, 212, 191, 0)" />
-//                                 </linearGradient>
-//                               </defs>
-//                               <path d="M100,100 L180,50" stroke="url(#routeGradient1)" strokeWidth="1.5">
-//                                 <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
-//                                 <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="3s" repeatCount="indefinite" />
-//                               </path>
-//                               <path d="M100,100 L160,160" stroke="url(#routeGradient1)" strokeWidth="1.5">
-//                                 <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
-//                                 <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="4s" repeatCount="indefinite" />
-//                               </path>
-//                               <path d="M100,100 L40,150" stroke="url(#routeGradient1)" strokeWidth="1.5">
-//                                 <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3.5s" repeatCount="indefinite" />
-//                                 <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="3.5s" repeatCount="indefinite" />
-//                               </path>
-//                               <path d="M100,100 L30,60" stroke="url(#routeGradient1)" strokeWidth="1.5">
-//                                 <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2.5s" repeatCount="indefinite" />
-//                                 <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="2.5s" repeatCount="indefinite" />
-//                               </path>
-//                             </svg>
-//                           </div>
-                          
-//                           {/* Central export hub */}
-//                           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border-2 border-teal-500/30 flex items-center justify-center animate-pulse">
-//                             <div className="w-24 h-24 rounded-full border-2 border-blue-500/30 flex items-center justify-center">
-//                               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-teal-500/20 to-blue-500/20 border border-white/20 flex items-center justify-center">
-//                                 <Globe size={32} className="text-white" />
-//                               </div>
-//                             </div>
-//                           </div>
-//                         </div>
-//                       </div>
-                      
-//                       {/* Destination points with info cards */}
-//                       <div className="absolute top-1/4 right-1/4 flex flex-col items-center">
-//                         <div className="w-3 h-3 bg-teal-400 rounded-full animate-ping opacity-75" style={{animationDuration: '2s'}}></div>
-//                         <div className="mt-2 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10">
-//                           <div className="flex items-center gap-2">
-//                             <MapPin size={16} className="text-teal-300" />
-//                             <span className="text-xs font-bold text-white">Asia-Pacific Hub</span>
-//                           </div>
-//                           <div className="mt-1 text-xs text-teal-200">35+ countries serviced</div>
-//                         </div>
-//                       </div>
-                      
-//                       <div className="absolute bottom-1/3 left-1/4 flex flex-col items-center">
-//                         <div className="w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-75" style={{animationDuration: '2.5s'}}></div>
-//                         <div className="mt-2 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10">
-//                           <div className="flex items-center gap-2">
-//                             <MapPin size={16} className="text-blue-300" />
-//                             <span className="text-xs font-bold text-white">European Network</span>
-//                           </div>
-//                           <div className="mt-1 text-xs text-blue-200">42 distribution centers</div>
-//                         </div>
-//                       </div>
-                      
-//                       {/* Shipping statistics cards */}
-//                       <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10 shadow-lg">
-//                         <div className="flex items-center gap-2">
-//                           <BarChart size={16} className="text-teal-300" />
-//                           <span className="text-xs font-bold text-white">98.7% On-time Delivery</span>
-//                         </div>
-//                       </div>
-                      
-//                       <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10 shadow-lg">
-//                         <div className="flex items-center gap-2">
-//                           <Users size={16} className="text-blue-300" />
-//                           <span className="text-xs font-bold text-white">2000+ Export Specialists</span>
-//                         </div>
-//                       </div>
-//                     </div>
-//                   </div>
-                  
-//                   {/* Export process steps */}
-//                   <div className="mt-6 grid grid-cols-4 gap-2">
-//                     <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-//                       <div className="text-xs font-bold text-white mb-1">Source</div>
-//                       <div className="text-xs text-teal-200">Step 1</div>
-//                     </div>
-//                     <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-//                       <div className="text-xs font-bold text-white mb-1">Ship</div>
-//                       <div className="text-xs text-teal-200">Step 2</div>
-//                     </div>
-//                     <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-//                       <div className="text-xs font-bold text-white mb-1">Distribute</div>
-//                       <div className="text-xs text-teal-200">Step 3</div>
-//                     </div>
-//                     <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-//                       <div className="text-xs font-bold text-white mb-1">Deliver</div>
-//                       <div className="text-xs text-teal-200">Step 4</div>
-//                     </div>
-//                   </div>
+// <div className={`md:w-1/2 transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'}`}>
+//   <div className="relative">
+//     <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-gradient-to-br from-blue-600/20 to-transparent blur-xl"></div>
+//     <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-gradient-to-br from-teal-600/20 to-transparent blur-xl"></div>
+    
+//     <div className="relative z-10 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-6 shadow-2xl shadow-blue-900/40">
+//       {/* Image Slider Container */}
+//       <div className="relative h-96 w-full rounded-xl overflow-hidden">
+//         {/* First Slide */}
+//         <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
+//           <img
+//             src="https://i.pinimg.com/736x/e1/af/fa/e1affaa1f3d06e614db76f3d5f63bdb5.jpg"
+//             alt="Background 1"
+//             className="w-full h-full object-cover"
+//           />
+//           <div className="absolute inset-0 bg-black/30"></div>
+//         </div>
+        
+//         {/* Second Slide */}
+//         <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
+//           <img
+//             src="https://img.freepik.com/free-photo/top-view-various-indian-spices-seasonings-table_181624-58725.jpg"
+//             alt="Background 2"
+//             className="w-full h-full object-cover"
+//           />
+//           <div className="absolute inset-0 bg-black/30"></div>
+//         </div>
+        
+//         {/* SVG Background Pattern (kept from original) */}
+//         <div className="absolute inset-0 opacity-20">
+//           <svg viewBox="0 0 800 500" className="w-full h-full">
+//             <path d="M110,200 Q150,180 200,190 T300,200 T400,180 T500,190 T600,200 T700,190"
+//                   stroke="rgba(255,255,255,0.3)"
+//                   fill="none"
+//                   strokeWidth="1" />
+//             <path d="M100,250 Q150,230 200,240 T300,250 T400,230 T500,240 T600,250 T700,240"
+//                   stroke="rgba(255,255,255,0.3)"
+//                   fill="none"
+//                   strokeWidth="1" />
+//             <path d="M150,300 Q200,280 250,290 T350,300 T450,280 T550,290 T650,300"
+//                   stroke="rgba(255,255,255,0.3)"
+//                   fill="none"
+//                   strokeWidth="1" />
+//           </svg>
+//         </div>
+        
+//         {/* Globe Animation (kept from original) */}
+//         <div className="absolute inset-0 flex items-center justify-center">
+//           <div className="relative w-64 h-64">
+//             <div className="absolute inset-0">
+//               <svg viewBox="0 0 200 200" className="w-full h-full">
+//                 <defs>
+//                   <linearGradient id="routeGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+//                     <stop offset="0%" stopColor="rgba(45, 212, 191, 0)" />
+//                     <stop offset="50%" stopColor="rgba(45, 212, 191, 1)" />
+//                     <stop offset="100%" stopColor="rgba(45, 212, 191, 0)" />
+//                   </linearGradient>
+//                 </defs>
+//                 <path d="M100,100 L180,50" stroke="url(#routeGradient1)" strokeWidth="1.5">
+//                   <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
+//                   <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="3s" repeatCount="indefinite" />
+//                 </path>
+//                 <path d="M100,100 L160,160" stroke="url(#routeGradient1)" strokeWidth="1.5">
+//                   <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
+//                   <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="4s" repeatCount="indefinite" />
+//                 </path>
+//                 <path d="M100,100 L40,150" stroke="url(#routeGradient1)" strokeWidth="1.5">
+//                   <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3.5s" repeatCount="indefinite" />
+//                   <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="3.5s" repeatCount="indefinite" />
+//                 </path>
+//                 <path d="M100,100 L30,60" stroke="url(#routeGradient1)" strokeWidth="1.5">
+//                   <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2.5s" repeatCount="indefinite" />
+//                   <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="2.5s" repeatCount="indefinite" />
+//                 </path>
+//               </svg>
+//             </div>
+            
+//             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border-2 border-teal-500/30 flex items-center justify-center animate-pulse">
+//               <div className="w-24 h-24 rounded-full border-2 border-blue-500/30 flex items-center justify-center">
+//                 <div className="w-16 h-16 rounded-full bg-gradient-to-br from-teal-500/20 to-blue-500/20 border border-white/20 flex items-center justify-center">
+//                   <Globe size={32} className="text-white" />
 //                 </div>
 //               </div>
 //             </div>
+//           </div>
+//         </div>
+        
+//         {/* All the info cards (kept from original) */}
+//         <div className="absolute top-1/4 right-1/4 flex flex-col items-center">
+//           <div className="w-3 h-3 bg-teal-400 rounded-full animate-ping opacity-75" style={{animationDuration: '2s'}}></div>
+//           <div className="mt-2 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10">
+//             <div className="flex items-center gap-2">
+//               <MapPin size={16} className="text-teal-300" />
+//               <span className="text-xs font-bold text-white">Asia-Pacific Hub</span>
+//             </div>
+//             <div className="mt-1 text-xs text-teal-200">35+ countries serviced</div>
+//           </div>
+//         </div>
+        
+//         <div className="absolute bottom-1/3 left-1/4 flex flex-col items-center">
+//           <div className="w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-75" style={{animationDuration: '2.5s'}}></div>
+//           <div className="mt-2 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10">
+//             <div className="flex items-center gap-2">
+//               <MapPin size={16} className="text-blue-300" />
+//               <span className="text-xs font-bold text-white">European Network</span>
+//             </div>
+//             <div className="mt-1 text-xs text-blue-200">42 distribution centers</div>
+//           </div>
+//         </div>
+        
+//         <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10 shadow-lg">
+//           <div className="flex items-center gap-2">
+//             <BarChart size={16} className="text-teal-300" />
+//             <span className="text-xs font-bold text-white">98.7% On-time Delivery</span>
+//           </div>
+//         </div>
+        
+//         <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10 shadow-lg">
+//           <div className="flex items-center gap-2">
+//             <Users size={16} className="text-blue-300" />
+//             <span className="text-xs font-bold text-white">2000+ Export Specialists</span>
+//           </div>
+//         </div>
+//       </div>
+      
+//       {/* Steps grid (kept from original) */}
+//       <div className="mt-6 grid grid-cols-4 gap-2">
+//         <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+//           <div className="text-xs font-bold text-white mb-1">Source</div>
+//           <div className="text-xs text-teal-200">Step 1</div>
+//         </div>
+//         <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+//           <div className="text-xs font-bold text-white mb-1">Ship</div>
+//           <div className="text-xs text-teal-200">Step 2</div>
+//         </div>
+//         <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+//           <div className="text-xs font-bold text-white mb-1">Distribute</div>
+//           <div className="text-xs text-teal-200">Step 3</div>
+//         </div>
+//         <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+//           <div className="text-xs font-bold text-white mb-1">Deliver</div>
+//           <div className="text-xs text-teal-200">Step 4</div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+            
 //           </div>
 //         </div>
 //       </div>
@@ -316,7 +305,7 @@
 //           <div className="text-center mb-12">
 //             <h2 className="text-3xl font-bold text-gray-900">Our Export Services</h2>
 //             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-// Delivering Excellence at Every Step of the Export Journey            </p>
+//             Delivering Excellence at Every Step of the Export Journey            </p>
 //           </div>
 
 //           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -391,11 +380,26 @@ import ExportingProducts from "./ExportingProducts";
 
 export default function ExportServicesUI() {
   const [isVisible, setIsVisible] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const containerRef = useRef(null);
   const exportSectionRef = useRef(null);
 
+  const images = [
+    "https://i.pinimg.com/736x/e1/af/fa/e1affaa1f3d06e614db76f3d5f63bdb5.jpg",
+    "https://img.freepik.com/free-photo/top-view-various-indian-spices-seasonings-table_181624-58725.jpg",
+    "https://i.pinimg.com/736x/b8/24/5e/b8245e9b606e79d245fa0892ed286418.jpg",
+    "https://i.pinimg.com/736x/c8/41/66/c84166e6dc37795abc152aebc40682f2.jpg"
+  ];
+
   useEffect(() => {
     setIsVisible(true);
+    
+    // Set up the slideshow interval
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
   }, []);
 
   const scrollToSection = () => {
@@ -519,154 +523,149 @@ export default function ExportServicesUI() {
               </div>
             </div>
 
-<div className={`md:w-1/2 transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'}`}>
-  <div className="relative">
-    <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-gradient-to-br from-blue-600/20 to-transparent blur-xl"></div>
-    <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-gradient-to-br from-teal-600/20 to-transparent blur-xl"></div>
-    
-    <div className="relative z-10 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-6 shadow-2xl shadow-blue-900/40">
-      {/* Image Slider Container */}
-      <div className="relative h-96 w-full rounded-xl overflow-hidden">
-        {/* First Slide */}
-        <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
-          <img 
-            src="https://i.pinimg.com/736x/e1/af/fa/e1affaa1f3d06e614db76f3d5f63bdb5.jpg" 
-            alt="Background 1"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/30"></div>
-        </div>
-        
-        {/* Second Slide */}
-        <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
-          <img 
-            src="https://img.freepik.com/free-photo/top-view-various-indian-spices-seasonings-table_181624-58725.jpg" 
-            alt="Background 2"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/30"></div>
-        </div>
-        
-        {/* SVG Background Pattern (kept from original) */}
-        <div className="absolute inset-0 opacity-20">
-          <svg viewBox="0 0 800 500" className="w-full h-full">
-            <path d="M110,200 Q150,180 200,190 T300,200 T400,180 T500,190 T600,200 T700,190" 
-                  stroke="rgba(255,255,255,0.3)" 
-                  fill="none" 
-                  strokeWidth="1" />
-            <path d="M100,250 Q150,230 200,240 T300,250 T400,230 T500,240 T600,250 T700,240" 
-                  stroke="rgba(255,255,255,0.3)" 
-                  fill="none" 
-                  strokeWidth="1" />
-            <path d="M150,300 Q200,280 250,290 T350,300 T450,280 T550,290 T650,300" 
-                  stroke="rgba(255,255,255,0.3)" 
-                  fill="none" 
-                  strokeWidth="1" />
-          </svg>
-        </div>
-        
-        {/* Globe Animation (kept from original) */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative w-64 h-64">
-            <div className="absolute inset-0">
-              <svg viewBox="0 0 200 200" className="w-full h-full">
-                <defs>
-                  <linearGradient id="routeGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="rgba(45, 212, 191, 0)" />
-                    <stop offset="50%" stopColor="rgba(45, 212, 191, 1)" />
-                    <stop offset="100%" stopColor="rgba(45, 212, 191, 0)" />
-                  </linearGradient>
-                </defs>
-                <path d="M100,100 L180,50" stroke="url(#routeGradient1)" strokeWidth="1.5">
-                  <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
-                  <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="3s" repeatCount="indefinite" />
-                </path>
-                <path d="M100,100 L160,160" stroke="url(#routeGradient1)" strokeWidth="1.5">
-                  <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
-                  <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="4s" repeatCount="indefinite" />
-                </path>
-                <path d="M100,100 L40,150" stroke="url(#routeGradient1)" strokeWidth="1.5">
-                  <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3.5s" repeatCount="indefinite" />
-                  <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="3.5s" repeatCount="indefinite" />
-                </path>
-                <path d="M100,100 L30,60" stroke="url(#routeGradient1)" strokeWidth="1.5">
-                  <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2.5s" repeatCount="indefinite" />
-                  <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="2.5s" repeatCount="indefinite" />
-                </path>
-              </svg>
-            </div>
-            
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border-2 border-teal-500/30 flex items-center justify-center animate-pulse">
-              <div className="w-24 h-24 rounded-full border-2 border-blue-500/30 flex items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-teal-500/20 to-blue-500/20 border border-white/20 flex items-center justify-center">
-                  <Globe size={32} className="text-white" />
+            {/* Right side interactive export visualization */}
+            <div className={`md:w-1/2 transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'}`}>
+              <div className="relative">
+                <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-gradient-to-br from-blue-600/20 to-transparent blur-xl"></div>
+                <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-gradient-to-br from-teal-600/20 to-transparent blur-xl"></div>
+                
+                <div className="relative z-10 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-6 shadow-2xl shadow-blue-900/40">
+                  {/* Image Slider Container */}
+                  <div className="relative h-96 w-full rounded-xl overflow-hidden">
+                    {/* Slides */}
+                    {images.map((image, index) => (
+                      <div 
+                        key={index}
+                        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
+                      >
+                        <img 
+                          src={image} 
+                          alt={`Background ${index + 1}`}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-black/30"></div>
+                      </div>
+                    ))}
+                    
+                    {/* SVG Background Pattern */}
+                    <div className="absolute inset-0 opacity-20">
+                      <svg viewBox="0 0 800 500" className="w-full h-full">
+                        <path d="M110,200 Q150,180 200,190 T300,200 T400,180 T500,190 T600,200 T700,190" 
+                              stroke="rgba(255,255,255,0.3)" 
+                              fill="none" 
+                              strokeWidth="1" />
+                        <path d="M100,250 Q150,230 200,240 T300,250 T400,230 T500,240 T600,250 T700,240" 
+                              stroke="rgba(255,255,255,0.3)" 
+                              fill="none" 
+                              strokeWidth="1" />
+                        <path d="M150,300 Q200,280 250,290 T350,300 T450,280 T550,290 T650,300" 
+                              stroke="rgba(255,255,255,0.3)" 
+                              fill="none" 
+                              strokeWidth="1" />
+                      </svg>
+                    </div>
+                    
+                    {/* Globe Animation */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="relative w-64 h-64">
+                        <div className="absolute inset-0">
+                          <svg viewBox="0 0 200 200" className="w-full h-full">
+                            <defs>
+                              <linearGradient id="routeGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stopColor="rgba(45, 212, 191, 0)" />
+                                <stop offset="50%" stopColor="rgba(45, 212, 191, 1)" />
+                                <stop offset="100%" stopColor="rgba(45, 212, 191, 0)" />
+                              </linearGradient>
+                            </defs>
+                            <path d="M100,100 L180,50" stroke="url(#routeGradient1)" strokeWidth="1.5">
+                              <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
+                              <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="3s" repeatCount="indefinite" />
+                            </path>
+                            <path d="M100,100 L160,160" stroke="url(#routeGradient1)" strokeWidth="1.5">
+                              <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
+                              <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="4s" repeatCount="indefinite" />
+                            </path>
+                            <path d="M100,100 L40,150" stroke="url(#routeGradient1)" strokeWidth="1.5">
+                              <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3.5s" repeatCount="indefinite" />
+                              <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="3.5s" repeatCount="indefinite" />
+                            </path>
+                            <path d="M100,100 L30,60" stroke="url(#routeGradient1)" strokeWidth="1.5">
+                              <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2.5s" repeatCount="indefinite" />
+                              <animate attributeName="stroke-dasharray" values="0,10,10,10,10,10;10,10,10,10,10,0" dur="2.5s" repeatCount="indefinite" />
+                            </path>
+                          </svg>
+                        </div>
+                        
+                        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border-2 border-teal-500/30 flex items-center justify-center animate-pulse">
+                          <div className="w-24 h-24 rounded-full border-2 border-blue-500/30 flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-teal-500/20 to-blue-500/20 border border-white/20 flex items-center justify-center">
+                              <Globe size={32} className="text-white" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Info cards */}
+                    <div className="absolute top-1/4 right-1/4 flex flex-col items-center">
+                      <div className="w-3 h-3 bg-teal-400 rounded-full animate-ping opacity-75" style={{animationDuration: '2s'}}></div>
+                      <div className="mt-2 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10">
+                        <div className="flex items-center gap-2">
+                          <MapPin size={16} className="text-teal-300" />
+                          <span className="text-xs font-bold text-white">Asia-Pacific Hub</span>
+                        </div>
+                        <div className="mt-1 text-xs text-teal-200">35+ countries serviced</div>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute bottom-1/3 left-1/4 flex flex-col items-center">
+                      <div className="w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-75" style={{animationDuration: '2.5s'}}></div>
+                      <div className="mt-2 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10">
+                        <div className="flex items-center gap-2">
+                          <MapPin size={16} className="text-blue-300" />
+                          <span className="text-xs font-bold text-white">European Network</span>
+                        </div>
+                        <div className="mt-1 text-xs text-blue-200">42 distribution centers</div>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10 shadow-lg">
+                      <div className="flex items-center gap-2">
+                        <BarChart size={16} className="text-teal-300" />
+                        <span className="text-xs font-bold text-white">98.7% On-time Delivery</span>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10 shadow-lg">
+                      <div className="flex items-center gap-2">
+                        <Users size={16} className="text-blue-300" />
+                        <span className="text-xs font-bold text-white">2000+ Export Specialists</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Steps grid */}
+                  <div className="mt-6 grid grid-cols-4 gap-2">
+                    <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+                      <div className="text-xs font-bold text-white mb-1">Source</div>
+                      <div className="text-xs text-teal-200">Step 1</div>
+                    </div>
+                    <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+                      <div className="text-xs font-bold text-white mb-1">Ship</div>
+                      <div className="text-xs text-teal-200">Step 2</div>
+                    </div>
+                    <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+                      <div className="text-xs font-bold text-white mb-1">Distribute</div>
+                      <div className="text-xs text-teal-200">Step 3</div>
+                    </div>
+                    <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+                      <div className="text-xs font-bold text-white mb-1">Deliver</div>
+                      <div className="text-xs text-teal-200">Step 4</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        
-        {/* All the info cards (kept from original) */}
-        <div className="absolute top-1/4 right-1/4 flex flex-col items-center">
-          <div className="w-3 h-3 bg-teal-400 rounded-full animate-ping opacity-75" style={{animationDuration: '2s'}}></div>
-          <div className="mt-2 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10">
-            <div className="flex items-center gap-2">
-              <MapPin size={16} className="text-teal-300" />
-              <span className="text-xs font-bold text-white">Asia-Pacific Hub</span>
-            </div>
-            <div className="mt-1 text-xs text-teal-200">35+ countries serviced</div>
-          </div>
-        </div>
-        
-        <div className="absolute bottom-1/3 left-1/4 flex flex-col items-center">
-          <div className="w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-75" style={{animationDuration: '2.5s'}}></div>
-          <div className="mt-2 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10">
-            <div className="flex items-center gap-2">
-              <MapPin size={16} className="text-blue-300" />
-              <span className="text-xs font-bold text-white">European Network</span>
-            </div>
-            <div className="mt-1 text-xs text-blue-200">42 distribution centers</div>
-          </div>
-        </div>
-        
-        <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10 shadow-lg">
-          <div className="flex items-center gap-2">
-            <BarChart size={16} className="text-teal-300" />
-            <span className="text-xs font-bold text-white">98.7% On-time Delivery</span>
-          </div>
-        </div>
-        
-        <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/10 shadow-lg">
-          <div className="flex items-center gap-2">
-            <Users size={16} className="text-blue-300" />
-            <span className="text-xs font-bold text-white">2000+ Export Specialists</span>
-          </div>
-        </div>
-      </div>
-      
-      {/* Steps grid (kept from original) */}
-      <div className="mt-6 grid grid-cols-4 gap-2">
-        <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-          <div className="text-xs font-bold text-white mb-1">Source</div>
-          <div className="text-xs text-teal-200">Step 1</div>
-        </div>
-        <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-          <div className="text-xs font-bold text-white mb-1">Ship</div>
-          <div className="text-xs text-teal-200">Step 2</div>
-        </div>
-        <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-          <div className="text-xs font-bold text-white mb-1">Distribute</div>
-          <div className="text-xs text-teal-200">Step 3</div>
-        </div>
-        <div className="text-center p-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-          <div className="text-xs font-bold text-white mb-1">Deliver</div>
-          <div className="text-xs text-teal-200">Step 4</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-            
           </div>
         </div>
       </div>
