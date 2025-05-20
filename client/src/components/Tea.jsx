@@ -13,7 +13,6 @@ const Tea = () => {
                         <h2 className="text-4xl md:text-5xl font-bold text-emerald-800 mb-4 relative z-10">
                             Our Tea Collection
                         </h2>
-                        <div className="absolute -bottom-2 left-0 w-full h-3 bg-emerald-200 opacity-60 rounded-full transform -rotate-1"></div>
                     </div>
                     <p className="text-lg text-emerald-700 max-w-2xl mx-auto">
                         Experience the finest tea varieties sourced from legendary tea gardens around the world.
@@ -94,9 +93,9 @@ const Tea = () => {
 
                         {/* Left side - Content */}
                         <div className="md:w-1/2 p-8 md:p-12">
-                            <h3 className="text-2xl font-bold text-amber-800 mb-4">Why Choose Our Camellia Sinensis Tea Leaves?</h3>
-                            <div className="w-16 h-1 bg-amber-600 mb-6"></div>
-                            <p className="text-amber-700 mb-6">
+                            <h3 className="text-2xl font-bold text-emerald-800 mb-4">Why Choose Our Camellia Sinensis Tea Leaves?</h3>
+                            <div className="w-16 h-1 bg-emerald-600 mb-6"></div>
+                            <p className="text-emerald-700 mb-6">
                                 Our premium tea leaves are crafted with care to deliver an exceptional tea experience
                                 that stands apart from ordinary varieties. Each leaf carries the essence of Indias
                                 finest tea-growing regions and centuries of tea cultivation tradition.
@@ -108,7 +107,7 @@ const Tea = () => {
                                         <Leaf size={18} className="text-amber-600" />
                                     </div>
                                     <div>
-                                        <p className="text-amber-700">Handpicked from high-altitude tea gardens</p>
+                                        <p className="text-emerald-700">Handpicked from high-altitude tea gardens</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
@@ -116,7 +115,7 @@ const Tea = () => {
                                         <Heart size={18} className="text-amber-600" />
                                     </div>
                                     <div>
-                                        <p className="text-amber-700">Naturally rich in antioxidants and essential nutrients</p>
+                                        <p className="text-emerald-700">Naturally rich in antioxidants and essential nutrients</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
@@ -124,7 +123,7 @@ const Tea = () => {
                                         <Coffee size={18} className="text-amber-600" />
                                     </div>
                                     <div>
-                                        <p className="text-amber-700">Hygienically processed and carefully packed to preserve freshness</p>
+                                        <p className="text-emerald-700">Hygienically processed and carefully packed to preserve freshness</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start">
@@ -132,7 +131,7 @@ const Tea = () => {
                                         <Droplets size={18} className="text-amber-600" />
                                     </div>
                                     <div>
-                                        <p className="text-amber-700">Compliant with international food safety and quality standards</p>
+                                        <p className="text-emerald-700">Compliant with international food safety and quality standards</p>
                                     </div>
                                 </div>
                             </div>

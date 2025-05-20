@@ -1,11 +1,8 @@
-
-
 import { useState } from 'react';
 import ThankYouFooter from './Footer';
 import Navbar from './Navbar';
 import CoffeeProducts from './CoffeProducts';
 import Tea from './Tea';
-
 
 const TeaAndCoffee = () => {
   const [logoHide, setLogoHide] = useState(false);
@@ -93,7 +90,12 @@ const TeaAndCoffee = () => {
     setIsProductsDropdownOpen(!isProductsDropdownOpen);
   };
 
-  
+  const scrollToPremiumSection = () => {
+    const element = document.getElementById('premium-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className='bg-amber-950 min-h-screen relative overflow-x-hidden'>
@@ -105,7 +107,6 @@ const TeaAndCoffee = () => {
           onToggleLogo={handleLogoToggle}
         />
       </div>
-        {/* {isProductsDropdownOpen && (<ProducstListingModal />)} */}
 
       {/* Hero Section */}
       <div className="relative">
@@ -123,8 +124,6 @@ const TeaAndCoffee = () => {
             />
           </div>
 
-     
-
           {/* Text content */}
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[350px] p-6 rounded-lg z-10 text-center bg-amber-900 bg-opacity-70 shadow-xl">
             <h1 className="text-3xl font-bold text-amber-50 mb-2">Premium Coffee</h1>
@@ -133,13 +132,16 @@ const TeaAndCoffee = () => {
               Discover our selection of expertly sourced teas and
               freshly roasted coffees from around the world.
             </p>
-            <button className="mt-4 bg-amber-600 hover:bg-amber-700 text-white py-2 px-6 rounded-full text-sm font-medium transition-all duration-300 shadow-md">
+            <button 
+              onClick={scrollToPremiumSection}
+              className="mt-4 bg-amber-600 hover:bg-amber-700 text-white py-2 px-6 rounded-full text-sm font-medium transition-all duration-300 shadow-md"
+            >
               Explore Our Collection
             </button>
           </div>
 
-          {/* Feature products */}
-          <div className="absolute left-[10%] top-[20%] w-20 z-10 animate-pulse">
+          {/* Feature products - hidden on mobile */}
+          <div className="hidden md:block absolute left-[10%] top-[20%] w-20 z-10 animate-pulse">
             <img
               src="/images/coffee-beans.png"
               alt="Coffee Beans"
@@ -147,7 +149,7 @@ const TeaAndCoffee = () => {
             />
           </div>
 
-          <div className="absolute right-[10%] top-[25%] w-20 z-10 animate-pulse">
+          <div className="hidden md:block absolute right-[10%] top-[25%] w-20 z-10 animate-pulse">
             <img
               src="/images/tea-leaves.png"
               alt="Tea Leaves"
@@ -170,9 +172,11 @@ const TeaAndCoffee = () => {
             />
           </div>
 
-
-          {/* Text content */}
-          <div className="absolute left-[12%] top-[20%] transform translate-x-8 max-w-md  bg-opacity-90 p-8 rounded-lg z-10  ">
+          {/* Text content with id for scrolling target */}
+          <div 
+            id="premium-section"
+            className="absolute left-[12%] top-[20%] transform translate-x-8 max-w-md bg-opacity-90 p-8 rounded-lg z-10"
+          >
             <h1 className="text-4xl font-bold text-amber-50 mb-3">Premium Coffee</h1>
             <h2 className="text-2xl text-amber-200 mb-4">Exceptional brews for every moment</h2>
             <p className="text-amber-100 text-md mb-6">
@@ -180,7 +184,10 @@ const TeaAndCoffee = () => {
               coffees from around the world. Each product is carefully selected
               for exceptional quality and flavor.
             </p>
-            <button className="bg-amber-600 hover:bg-amber-700 text-white py-3 px-8 rounded-full text-lg font-medium transition-all duration-300 shadow-md">
+            <button 
+              onClick={scrollToPremiumSection}
+              className="bg-amber-600 hover:bg-amber-700 text-white py-3 px-8 rounded-full text-lg font-medium transition-all duration-300 shadow-md"
+            >
               Explore Our Collection
             </button>
           </div>
@@ -216,7 +223,7 @@ const TeaAndCoffee = () => {
               <img
                 src="/images/Coffee_Beans_7-removebg-preview.png"
                 alt="Tea Leaf"
-                className="w-full h-auto rounded-lg  transition-all duration-300 drop-shadow-2xl"
+                className="w-full h-auto rounded-lg transition-all duration-300 drop-shadow-2xl"
               />
               <div className="absolute bottom-[-50px] left-36 w-full h-44 bg-amber-950 blur-xl rounded-b-lg" />
             </div>
@@ -247,7 +254,7 @@ const TeaAndCoffee = () => {
         <Tea/>
       </div>
 
-      <div className="relative  z-20  ">
+      <div className="relative z-20">
         <ThankYouFooter />
       </div>
     </div>

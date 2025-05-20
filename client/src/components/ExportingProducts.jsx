@@ -107,7 +107,7 @@ const ExportingProducts = forwardRef((props, ref) => {
   }, [ref]);
 
   return (
-    <div ref={ref} className="h-[100vh] bg-blue-50 relative overflow-hidden">
+    <div ref={ref} className=" bg-blue-50 relative overflow-hidden">
       {/* Flight image */}
       <img
         ref={flightRef}
@@ -118,17 +118,6 @@ const ExportingProducts = forwardRef((props, ref) => {
         }`}
       />
       
-      {/* Text content */}
-      <div 
-        ref={textRef}
-        className={`${isFixed ? 'fixed right-44 top-1/2 transform -translate-y-1/2' : 'relative mx-auto mr-40 mt-[-200px] right-24'} w-1/3 pr-8`}
-      >
-        <h2 className="text-3xl font-bold mb-4">Our Export Products</h2>
-        <p className="text-lg">
-          We deliver high-quality products worldwide with fast and reliable shipping.
-          Our network ensures your goods arrive safely and on time.
-        </p>
-      </div>
     </div>
   );
 });

@@ -10,7 +10,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
   
   const productCategories = [
     { name: 'Spices', subcategories: [] },
-    { name: 'Coffe & Tea', subcategories: [] },
+    { name: 'Coffee & Tea', subcategories: [] },
   ];
 
   // Update active item based on current route
@@ -51,7 +51,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-gray-900 font-bold text-xl tracking-tight">
-              <img src="/images/first logo.jpg" alt="logo" className='w-12 rounded-full'/>
+              <img src="/images/first_logo-removebg-preview.png" alt="logo" className='w-20 rounded-full'/>
             </Link>
           </div>
           
@@ -87,8 +87,8 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
                 onMouseLeave={() => setHoverItem(null)}
                 className={`group flex items-center px-2 py-1 text-sm font-medium rounded-md transition-all duration-300 ${
                   activeItem === 'Products' 
-                    ? 'text-white bg-emerald-500' 
-                    : 'text-gray-700 hover:text-emerald-500'
+                    ? 'text-white bg-blue-500' 
+                    : 'text-gray-700 hover:text-blue-500'
                 }`}
               >
                 <span>Products</span>
@@ -96,7 +96,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
                   className={`ml-1 w-4 h-4 transition-transform duration-200 ${
                     isProductsDropdownOpen ? 'rotate-180' : ''
                   } ${
-                    activeItem === 'Products' ? 'text-white' : 'text-gray-400 group-hover:text-emerald-500'
+                    activeItem === 'Products' ? 'text-white' : 'text-blue-400 group-hover:text-blue-500'
                   }`} 
                   fill="none" 
                   stroke="currentColor" 
@@ -180,7 +180,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
           <div className="md:hidden flex items-center">
             <button
               onClick={handleOpenMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-emerald-500 focus:outline-none transition duration-300"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-500 focus:outline-none transition duration-300"
             >
               <span className="sr-only">Open main menu</span>
               <div className="relative w-6 h-5">
@@ -217,8 +217,8 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
               onClick={() => handleMenuItemClick('Products')}
               className={`w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium ${
                 activeItem === 'Products' 
-                  ? 'text-white bg-emerald-500' 
-                  : 'text-gray-700 hover:bg-gray-50 hover:text-emerald-500'
+                  ? 'text-white bg-blue-500' 
+                  : 'text-gray-700 hover:bg-gray-50 hover:text-blue-500'
               } transition-colors duration-200`}
             >
               <span>Products</span>
@@ -243,7 +243,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
                   <div key={category.name} className="py-1">
                     <Link
                       to={`/${category.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
-                      className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-emerald-500 rounded-md"
+                      className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-500 rounded-md"
                       onClick={() => {
                         onChangeIsProductsDropdownOpen();
                         setIsMenuOpen(false);
@@ -257,7 +257,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
                         <Link
                           key={subcategory}
                           to={`/${category.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}/${subcategory.toLowerCase().replace(/ /g, '-')}`}
-                          className="block px-3 py-1 text-sm text-gray-600 hover:text-emerald-500"
+                          className="block px-3 py-1 text-sm text-gray-600 hover:text-blue-500"
                           onClick={() => {
                             onChangeIsProductsDropdownOpen();
                             setIsMenuOpen(false);
@@ -285,7 +285,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
           <div className="pt-2">
             <a
               href="#"
-              className="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-colors duration-200"
+              className="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-200"
             >
               Sign In
             </a>
@@ -306,14 +306,14 @@ function NavLink({ children, to, active, onClick, onMouseEnter, onMouseLeave, is
       onMouseLeave={onMouseLeave}
       className={`relative group px-2 py-1 text-sm font-medium rounded-md transition-all duration-300 ${
         active 
-          ? 'text-white bg-emerald-500' 
-          : 'text-gray-700 hover:text-emerald-500'
+          ? 'text-white bg-blue-500' 
+          : 'text-gray-700 hover:text-blue-500'
       }`}
     >
       {children}
       {!active && (
         <span 
-          className={`absolute bottom-0 left-0 w-full h-0.5 bg-emerald-500 transform origin-left transition-transform duration-300 ${
+          className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transform origin-left transition-transform duration-300 ${
             isHovered ? 'scale-x-100' : 'scale-x-0'
           }`}
         />
@@ -330,8 +330,8 @@ function MobileNavLink({ children, to, active, onClick }) {
       onClick={onClick}
       className={`block px-3 py-2 rounded-md text-base font-medium ${
         active 
-          ? 'text-white bg-emerald-500' 
-          : 'text-gray-700 hover:bg-gray-50 hover:text-emerald-500'
+          ? 'text-white bg-blue-500' 
+          : 'text-gray-700 hover:bg-gray-50 hover:text-blue-500'
       } transition-colors duration-200`}
     >
       {children}
