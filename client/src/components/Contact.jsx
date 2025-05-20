@@ -86,9 +86,9 @@ const Contact = () => {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-800 mb-6">Contact Portiva Global</h1>
+          <h1 className="text-[50px] font-bold text-gray-800 mb-6">Contact Portiva Global</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're here to help with any questions about our premium Kerala products. Reach out through any of our communication channels.
+            We are here to help with any questions about our premium Kerala products. Reach out through any of our communication channels.
           </p>
         </div>
         

@@ -21,7 +21,7 @@ export default function AboutUs() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="pt-16 pb-20 text-center">
-            <h1 className="text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+            <h1 className="text-[50px] font-extrabold text-gray-900 tracking-tight mb-4">
               About Portiva Global
             </h1>
             <p className="max-w-2xl mx-auto text-xl text-gray-700">

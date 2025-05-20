@@ -55,7 +55,6 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
               <div className="ml-2">
                 <span className="text-blue-600 font-bold text-xl tracking-wide">PORTIVA</span>
                 <span className="text-gray-800 font-semibold text-xl tracking-wide"> GLOBAL</span>
-                <div className="text-xs text-gray-500 font-medium tracking-wider">Premium Spices & Beverages</div>
               </div>
             </Link>
           </div>
