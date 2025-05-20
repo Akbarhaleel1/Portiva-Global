@@ -48,10 +48,15 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
     <nav className="fixed w-full mt-[-45px] bg-white/90 backdrop-blur-md shadow-lg z-50 px-4 md:px-8 xl:px-16 transition-all duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-gray-900 font-bold text-xl tracking-tight">
-              <img src="/images/first_logo-removebg-preview.png" alt="logo" className='w-20 rounded-full'/>
+          {/* Logo and Company Name */}
+          <div className="flex-shrink-0 flex items-center gap-3">
+            <Link to="/" className="flex items-center">
+              <img src="/images/first_logo-removebg-preview.png" alt="Portiva Global Logo" className="w-16 h-16 rounded-full object-contain" />
+              <div className="ml-2">
+                <span className="text-blue-600 font-bold text-xl tracking-wide">PORTIVA</span>
+                <span className="text-gray-800 font-semibold text-xl tracking-wide"> GLOBAL</span>
+                <div className="text-xs text-gray-500 font-medium tracking-wider">Premium Spices & Beverages</div>
+              </div>
             </Link>
           </div>
           
@@ -196,6 +201,19 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
       {/* Mobile Menu */}
       <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96' : 'max-h-0'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
+          {/* Mobile Company Name */}
+          <div className="pb-2 pt-1 px-3 border-b border-gray-100">
+            <div className="flex justify-center">
+              <div className="text-center">
+                <div className="flex items-center justify-center">
+                  <span className="text-blue-600 font-bold text-lg">PORTIVA</span>
+                  <span className="text-gray-800 font-semibold text-lg ml-1">GLOBAL</span>
+                </div>
+                <div className="text-xs text-gray-500 font-medium">Premium Spices & Beverages</div>
+              </div>
+            </div>
+          </div>
+
           <MobileNavLink 
             to="/" 
             active={activeItem === 'Home'} 
