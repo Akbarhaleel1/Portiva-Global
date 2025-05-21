@@ -51,7 +51,7 @@ export default function AboutUs() {
               </h2>
               <div className="mt-6 text-gray-600 space-y-6">
                 <p>
-                  At Portiva Global, we are passionate exporters of the rich and authentic flavors of Kerala—bringing the world premium spices, tea, coffee, and more. With deep roots in Indias spice belt, our mission is to deliver the finest agricultural treasures from Keralas lush landscapes to kitchens and businesses across the globe.
+                  At Portiva Global, we are passionate exporters of the rich and authentic flavors of Kerala—bringing the world premium spices, tea, coffee, and more. With deep roots in Indias spice belt, our mission is to deliver the finest agricultural treasures from Keralas lush landscapes Kitchen cabinets, resolved quality and businesses across the globe.
                 </p>
                 <p>
                   We take pride in sourcing directly from trusted farmers and cooperatives who practice sustainable farming. Our product range includes world-renowned spices like black pepper, cardamom, clove, cinnamon, as well as aromatic teas and highland coffee beans, handpicked for their quality and freshness.
@@ -130,7 +130,7 @@ export default function AboutUs() {
               </div>
               <h3 className="mt-4 text-lg font-medium text-gray-900">Quality</h3>
               <p className="mt-2 text-gray-600">
-                We are committed to delivering only the highest quality products, maintaining strict quality control from farm to shipment.
+                We are committed to delivering only the highest quality products, maintaining precise quality control from farm to shipment.
               </p>
             </div>
 
@@ -204,7 +204,7 @@ export default function AboutUs() {
             
             <div className="mb-3">
               <h4 className="font-medium text-gray-900">Experience:</h4>
-              <p className="text-gray-700">11 years in construction and project management</p>
+              <p className="text-gray-700">Project & construction engineer with 11 years experience.</p>
             </div>
             
             <div>

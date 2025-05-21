@@ -12,14 +12,14 @@ export default function WhyChooseUs() {
     {
       number: "02",
       title: "Quality You Can Trust",
-      description: "Quality is our top priority. From farm to shipment, every product goes through strict quality checks and packaging standards to ensure freshness, consistency, and compliance with global regulations. We deliver what we promise—always.",
+      description: "Quality is our top priority. From farm to shipment, every product goes through Precise quality checks and packaging standards to ensure freshness, consistency, and compliance with global regulations. We deliver what we promise—always.",
       image: "/images/exporting3.jpg",
       icon: <FileCheck className="h-6 w-6 text-teal-600" />
     },
     {
       number: "03",
       title: "Reliable Logistics & Timely Delivery",
-      description: "Our experienced logistics team ensures your shipments arrive on time, every time. With transparent tracking, efficient documentation, and trusted shipping partners, we make global trade smooth, secure, and stress-free.",
+      description: "Our expert logistics team guarantees timely and reliable delivery of your shipments. With transparent tracking, efficient documentation, and trusted shipping partners, we make global trade smooth, secure, and stress-free.",
       image: "/images/hero section 2.jpg",
       icon: <Shield className="h-6 w-6 text-teal-600" />
     }
