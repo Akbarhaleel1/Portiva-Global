@@ -57,7 +57,7 @@ export default function AboutUs() {
                   We take pride in sourcing directly from trusted farmers and cooperatives who practice sustainable farming. Our product range includes world-renowned spices like black pepper, cardamom, clove, cinnamon, as well as aromatic teas and highland coffee beans, handpicked for their quality and freshness.
                 </p>
                 <p>
-                  Our commitment is not just to trade, but to preserve the heritage and purity of Keralas natural produce. Whether you are a retailer, wholesaler, or food brand, we ensure consistency, reliability, and uncompromised quality in every shipment.
+                  Our commitment is not just to trade, but to preserve the heritage and purity of Keralas natural produce. Whether you are a retailer, wholesaler, or food brand, we ensure consistency, reliability, and Resolved quality in every shipment.
                 </p>
               </div>
             </div>
