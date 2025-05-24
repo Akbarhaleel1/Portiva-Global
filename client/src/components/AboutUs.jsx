@@ -199,7 +199,7 @@ export default function AboutUs() {
           <div className="bg-gray-50 p-4 rounded-md mb-6">
             <div className="mb-3">
               <h4 className="font-medium text-gray-900">Education:</h4>
-              <p className="text-gray-700">B.Tech in Civil Engineering</p>
+              <p className="text-gray-700">B.tech in Infrastructure Engineer(CIVIL)</p>
             </div>
             
             <div className="mb-3">
