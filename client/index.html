@@ -8,10 +8,43 @@
     <title>Portiva Global</title>
     <meta name="title" content="Portiva Global">
     <meta name="description" content="Portiva Global exports high-quality coffee, tea, and spices worldwide. Trusted supplier for bulk & specialty products">
-  
+    <style>
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 300px;
+        border-radius: 5px;
+        margin: 20px;
+        background: white;
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+      }
+      
+      .card-container {
+        padding: 2px 16px;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Image Card -->
+    <div class="card">
+      <img src="/client/public/images/first logo.jpg" alt="Portiva Global Logo">
+      <div class="card-container">
+        <h4><b>Portiva Global</b></h4> 
+        <p>Premium Coffee, Tea & Spices</p> 
+      </div>
+    </div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
