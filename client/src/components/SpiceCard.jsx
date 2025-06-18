@@ -118,13 +118,13 @@ const SpiceCardGrid = () => {
       id: 3,
       title: "Clove",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: '/images/product3.jpg'
+      image: '/images/product4.jpg'
     },
     {
       id: 4,
       title: "Bay leaf",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: '/images/product4.jpg'
+      image: '/images/bayleaf.jpg'
     },
     {
       id: 5,
@@ -136,7 +136,7 @@ const SpiceCardGrid = () => {
       id: 6,
       title: "Star anise",
       description: "At SpiceCraft, we blend tradition with innovation, using advanced purification",
-      image: '/images/product6.jpg'
+      image: '/images/staranise.webp'
     }
   ];
 
