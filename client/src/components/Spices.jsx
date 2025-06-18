@@ -25,7 +25,7 @@ const Spices = () => {
         id: 1,
         name: "CLOVES",
         description: "Premium quality cloves with rich aroma and flavor, carefully selected and purified using advanced methods Fresh green cardamom pods with intense fragrance, perfect for both sweet and savory dishes.",
-        image: "/images/cloves.png",
+        image: "/images/CARDAMOM.png",
         scatteredImage: "/images/cloves-scattered.png",
         position: "left"
       },
@@ -33,21 +33,21 @@ const Spices = () => {
         id: 2,
         name: "CARDAMOM",
         description: "Fresh green cardamom pods with intense fragrance, perfect for both sweet and savory dishes.",
-        image: "/images/CARDAMOM.png",
+        image: "/images/cloves.png",
         position: "top"
       },
       {
         id: 3, 
         name: "CINNAMON",
         description: "Pure Ceylon cinnamon sticks with sweet woody flavor and health benefits.",
-        image: "/images/CINNAMON.png",
+        image: "/images/CINNAMONs.avif",
         position: "center"
       },
       {
         id: 4,
         name: "BLACK PEPPER",
         description: "Premium quality cloves with rich aroma and flavor, carefully selected and purified using advanced methods Fresh green cardamom pods with intense fragrance, perfect for both sweet and savory dishes.",
-        image: "/images/cloves.png",
+        image: "/images/blackpepper.webp",
         scatteredImage: "/images/pepper-scattered.png",
         position: "right"
       }

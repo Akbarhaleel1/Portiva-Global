@@ -22,7 +22,7 @@ const GzapAnimation = () => {
       image: "/images/product1.jpg",
       badge: "Premium Export",
       specs: [
-        "Origin: Guatemala Highlands",
+        "Origin: Kerala, India",
         "Size: 8mm+ pods",
         "Moisture: <10%",
         "Color: Vibrant Green"
@@ -80,7 +80,7 @@ const GzapAnimation = () => {
       image: "/images/product4.jpg",
       badge: "Organic",
       specs: [
-        "Origin: Zanzibar & Madagascar",
+        "Origin: Kerala, India",
         "Type: Whole flower buds",
         "Eugenol Content: 18-20%",
         "Moisture: <8%",
@@ -100,7 +100,7 @@ const GzapAnimation = () => {
       image: "/images/product5.jpg",
       badge: "Premium Quality",
       specs: [
-        "Pepper Origin: Malabar, India",
+        "Pepper Origin: Kerala, India",
         "Pepper Size: 4.25mm+",
         "Pepper Heat: 50,000-60,000 SHU",
       ],

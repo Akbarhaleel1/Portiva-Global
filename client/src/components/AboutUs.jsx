@@ -242,7 +242,7 @@ export default function AboutUs() {
                   <p className="flex items-start text-gray-700">
                     <span className="font-medium mr-2">Address:</span>
                     <span>
-                      Portiva Global, Maruthathoor<br />
+                      Portiva Global,<br /> Maruthathoor
                       Chaikottukonam P.O, Neyyattinkara<br />
                       Thiruvananthapuram, Kerala
                     </span>

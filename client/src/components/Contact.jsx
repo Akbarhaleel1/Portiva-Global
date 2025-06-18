@@ -524,7 +524,7 @@ const Contact = () => {
   const officeLocations = [
     {
       name: 'Head Office',
-      address: 'Kunninpuram Veedu, Maruthathoor, Chaikottukonam P.O, Neyyattinkara, Thiruvananthapuram, Kerala',
+      address: 'Near Govt. KNM College, Kanjiramkulam P.O, Thiruvananthapuram, Kerala – 695524',
       hours: 'Monday - Friday: 9:00 AM - 6:00 PM',
       phone: '+91 99461 80294'
     }
