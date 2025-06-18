@@ -419,8 +419,7 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-teal-400 mt-1 flex-shrink-0" />
                 <p className="text-gray-300">
-                  Near Govt. KNM College Kanjiramkulam Kanjiramkulam P.O -
-                  695524
+                  Kanjiramkulam PO, Thiruvananthapuram, Kerala - 69524
                 </p>
               </div>
 

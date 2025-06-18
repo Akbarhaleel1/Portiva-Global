@@ -601,8 +601,7 @@ const Contact = () => {
             <div className="p-6 text-center">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Visit Us</h3>
               <p className="text-gray-600 mb-4">Our office in Kerala</p>
-              <p className="text-sm text-gray-700">Near Govt. KNM College </p>
-              <p className="text-sm text-gray-700">Kanjiramkulam Kanjiramkulam P.O - 695524</p>
+              <p className="text-sm text-gray-700">Kanjiramkulam PO, Thiruvananthapuram, Kerala- 695524</p>
               <p className="text-sm text-gray-500 mt-2">By appointment only</p>
             </div>
           </div>

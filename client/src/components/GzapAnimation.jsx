@@ -41,7 +41,7 @@ const GzapAnimation = () => {
       image: "/images/product2.jpg",
       badge: "Grade A",
       specs: [
-        "Origin: Sri Lanka",
+        "Origin: Kerala, India",
         "Type: Cinnamomum verum",
         "Length: 15-20cm sticks",
         "Diameter: 1-1.5cm",
