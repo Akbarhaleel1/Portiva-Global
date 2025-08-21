@@ -82,8 +82,6 @@ export default function Footer() {
                   Ground floor
                   Door no:230 E
                   Thirivananthapuram NH_66 kovalam - Kanyakumari BYPASS
-                  +91 9946180294
-
                 </p>
 
               </div>
@@ -92,7 +90,6 @@ export default function Footer() {
                 <p className="text-gray-300">
                   Portiva Global International export and import
                   Dubai UAE
-                  +971 503053567
                 </p>
 
               </div>
@@ -100,7 +97,7 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-teal-400 flex-shrink-0" />
                 <p className="text-gray-300">+91 9946180294</p>
-                <p className="text-gray-300">+971 503053567</p>
+                <p className="text-gray-300">+971 503053567</p>
               </div>
 
               <div className="flex items-center space-x-3">
