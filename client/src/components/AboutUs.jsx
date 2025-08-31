@@ -157,70 +157,71 @@ export default function AboutUs() {
         </div>
       </div>
 
-         <div className="py-16 bg-gradient-to-br from-teal-500/10 to-blue-500/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-            Meet the Founder
-          </h2>
-          <p className="mt-2 max-w-2xl mx-auto text-xl text-gray-600">
-            The vision behind Portiva Global
-          </p>
-        </div>
-        
-        <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
-          <div className="flex items-center mb-4">
-            {/* Small founder image next to name */}
-            <div className="relative mr-4">
-              <div className="h-16 w-16 rounded-full overflow-hidden border-2 border-white shadow-md">
-                {/* Replace with actual image when available */}
-                <div className="w-full h-full bg-gradient-to-r from-teal-400 to-blue-500 flex items-center justify-center">
-                  <User className="h-8 w-8 text-white" />
+      <div className="py-16 bg-gradient-to-br from-teal-500/10 to-blue-500/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+              Meet the Founder
+            </h2>
+            <p className="mt-2 max-w-2xl mx-auto text-xl text-gray-600">
+              The vision behind Portiva Global
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center mb-6">
+              {/* Founder image */}
+              <div className="relative mb-6 md:mb-0 md:mr-8">
+                <div className="h-48 w-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                  <img 
+                    src="https://i.ibb.co/d4yvmKrP/Screenshot-2025-08-31-151457.png" 
+                    alt="Manoj Surendran - Founder of Portiva Global" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-2 -right-2 bg-teal-500 text-white p-2 rounded-full shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
               </div>
-              <div className="absolute -bottom-1 -right-1 bg-teal-500 text-white p-1 rounded-full shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+              
+              <div className="text-center md:text-left">
+                <h3 className="text-2xl font-bold text-gray-900">Manoj Surendran</h3>
+                <p className="text-lg text-teal-600 font-medium">Founder & Managing Director</p>
+                <p className="text-gray-600 mt-2">Bringing Kerala's flavors to the world</p>
               </div>
             </div>
             
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900">Manoj Surendran</h3>
-              <p className="text-lg text-teal-600 font-medium">Founder & Managing Director</p>
-            </div>
-          </div>
-          
-          <p className="text-gray-700 mb-6">
-            An ex-Civil Engineer turned entrepreneur, Manoj Surendran brings over a decade of international 
-            professional experience and a deep passion for Keralas agricultural wealth.
-          </p>
-          
-          <div className="bg-gray-50 p-4 rounded-md mb-6">
-            <div className="mb-3">
-              <h4 className="font-medium text-gray-900">Education:</h4>
-              <p className="text-gray-700">B.tech in Infrastructure Engineer(CIVIL)</p>
+            <p className="text-gray-700 mb-6">
+              An ex-Civil Engineer turned entrepreneur, Manoj Surendran brings over a decade of international 
+              professional experience and a deep passion for Keralas agricultural wealth.
+            </p>
+            
+            <div className="bg-gray-50 p-4 rounded-md mb-6">
+              <div className="mb-3">
+                <h4 className="font-medium text-gray-900">Education:</h4>
+                <p className="text-gray-700">B.tech in Infrastructure Engineer (CIVIL)</p>
+              </div>
+              
+              <div className="mb-3">
+                <h4 className="font-medium text-gray-900">Experience:</h4>
+                <p className="text-gray-700">Project & construction engineer with 11 years experience.</p>
+              </div>
+              
+              <div>
+                <h4 className="font-medium text-gray-900">Previous Role:</h4>
+                <p className="text-gray-700">Binladin Contracting Group LLC, Dubai (Saudi Binladin Group)</p>
+              </div>
             </div>
             
-            <div className="mb-3">
-              <h4 className="font-medium text-gray-900">Experience:</h4>
-              <p className="text-gray-700">Project & construction engineer with 11 years experience.</p>
+            <div className="border-l-4 border-teal-500 pl-4 italic text-gray-700">
+              "Driven by my roots and a desire to promote Keralas world-class produce globally, 
+              I founded Portiva Global with the vision of merging traditional values with global trade standards."
             </div>
-            
-            <div>
-              <h4 className="font-medium text-gray-900">Previous Role:</h4>
-              <p className="text-gray-700">Binladin Contracting Group LLC, Dubai (Saudi Binladin Group)</p>
-            </div>
-          </div>
-          
-          <div className="border-l-4 border-teal-500 pl-4 italic text-gray-700">
-            Driven by his roots and a desire to promote Keralas world-class produce globally, 
-            Manoj founded Portiva Global with the vision of merging traditional values with global trade standards.
           </div>
         </div>
       </div>
-    </div>
-
 
       {/* Contact Section */}
       <div id="contact" className="bg-white py-16">
@@ -242,9 +243,8 @@ export default function AboutUs() {
                   <p className="flex items-start text-gray-700">
                     <span className="font-medium mr-2">Address:</span>
                     <span>
-                      Portiva Global,<br /> Maruthathoor
-                      Chaikottukonam P.O, Neyyattinkara<br />
-                      Thiruvananthapuram, Kerala
+                      Kairali, Pullingal Mekkumuri, Thirupuram
+                      Thiruvananthapuram, Kerala, India - 695133
                     </span>
                   </p>
                   <p className="flex items-center text-gray-700">
