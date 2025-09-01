@@ -84,7 +84,7 @@ const Contact = () => {
   const officeLocations = [
     {
       name: 'Head Office',
-      address: 'Near Govt. KNM College, Kanjiramkulam P.O, Thiruvananthapuram, Kerala – 695524',
+      address: 'Kairali, Pullingal Mekkumuri, Thirupuram Thiruvananthapuram, Kerala, India - 695133',
       hours: 'Monday - Friday: 9:00 AM - 6:00 PM',
       phone: '+91 99461 80294'
     },
