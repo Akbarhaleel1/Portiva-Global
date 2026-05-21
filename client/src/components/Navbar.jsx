@@ -1,17 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { categoriesData } from '../data/categories';
 
 export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropdownOpen, onToggleLogo }) {
   const location = useLocation();
   const [activeItem, setActiveItem] = useState('Home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoverItem, setHoverItem] = useState(null);
-  const [activeCategory, setActiveCategory] = useState(null);
-  
-  const productCategories = [
-    { name: 'Spices', subcategories: [] },
-    { name: 'Coffee & Tea', subcategories: [] },
-  ];
 
   // Update active item based on current route
   useEffect(() => {
@@ -25,18 +20,10 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
   const handleMenuItemClick = (item) => {
     if (item === 'Products') {
       onChangeIsProductsDropdownOpen();
-      if (isProductsDropdownOpen) {
-        setActiveCategory(null);
-      }
     } else {
       setActiveItem(item);
-      setActiveCategory(null);
       setIsMenuOpen(false);
     }
-  };
-
-  const handleCategoryHover = (category) => {
-    setActiveCategory(category);
   };
 
   const handleOpenMenu = () => {
@@ -109,54 +96,40 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
               
               {/* Products Dropdown Menu */}
               {isProductsDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-64 bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden z-50 origin-top-right transition-all duration-200">
-                  <div className="py-1 divide-y divide-gray-100">
-                    {productCategories.map((category) => (
-                      <div 
-                        key={category.name} 
-                        className="relative"
-                        onMouseEnter={() => handleCategoryHover(category.name)}
-                        onMouseLeave={() => setActiveCategory(null)}
-                      >
-                        <Link
-                          to={`/${category.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
-                          className="flex justify-between items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-150"
-                          onClick={() => {
-                            onChangeIsProductsDropdownOpen();
-                            setIsMenuOpen(false);
-                          }}
-                        >
-                          <span className="font-medium">{category.name}</span>
-                          <svg 
-                            className="w-4 h-4 text-gray-400" 
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </Link>
-                        
-                        {/* Subcategories Flyout */}
-                        {activeCategory === category.name && (
-                          <div className="absolute left-full top-0 w-64 bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden">
-                            <div className="py-1">
-                              {category.subcategories.map((subcategory) => (
-                                <Link
-                                  key={subcategory} 
-                                  to={`/${category.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}/${subcategory.toLowerCase().replace(/ /g, '-')}`}
-                                  className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-150"
-                                  onClick={() => {
-                                    onChangeIsProductsDropdownOpen();
-                                    setIsMenuOpen(false);
-                                  }}
-                                >
-                                  {subcategory}
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        )}
+                <div className="absolute right-0 mt-2 w-[550px] lg:w-[650px] bg-white border border-gray-100 rounded-2xl shadow-2xl p-4 z-50 origin-top-right transition-all duration-200">
+                  <div className="grid grid-cols-3 gap-4">
+                    {[
+                      categoriesData.slice(0, Math.ceil(categoriesData.length / 3)),
+                      categoriesData.slice(Math.ceil(categoriesData.length / 3), Math.ceil(categoriesData.length / 3) * 2),
+                      categoriesData.slice(Math.ceil(categoriesData.length / 3) * 2)
+                    ].map((columnItems, colIdx) => (
+                      <div key={colIdx} className="flex flex-col gap-1">
+                        {columnItems.map((category) => {
+                          const categoryPath = category.slug === 'coffee-tea' 
+                            ? '/coffee-tea' 
+                            : category.slug === 'spices-and-sauces' 
+                              ? '/spices' 
+                              : `/products/${category.slug}`;
+                          const isActive = location.pathname === categoryPath;
+                          
+                          return (
+                            <Link
+                              key={category.id}
+                              to={categoryPath}
+                              className={`block px-3 py-1.5 text-xs font-semibold rounded-lg transition-colors truncate ${
+                                isActive 
+                                  ? 'bg-blue-500 text-white' 
+                                  : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                              }`}
+                              onClick={() => {
+                                onChangeIsProductsDropdownOpen();
+                                setIsMenuOpen(false);
+                              }}
+                            >
+                              <span>{category.title}</span>
+                            </Link>
+                          );
+                        })}
                       </div>
                     ))}
                   </div>
@@ -252,37 +225,33 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
             
             {/* Mobile Products Dropdown */}
             {isProductsDropdownOpen && (
-              <div className="mt-2 pl-3 border-l-2 border-gray-100">
-                {productCategories.map((category) => (
-                  <div key={category.name} className="py-1">
+              <div className="mt-2 pl-3 border-l-2 border-gray-100 max-h-[50vh] overflow-y-auto custom-scrollbar grid grid-cols-1 sm:grid-cols-2 gap-1">
+                {categoriesData.map((category) => {
+                  const categoryPath = category.slug === 'coffee-tea' 
+                    ? '/coffee-tea' 
+                    : category.slug === 'spices-and-sauces' 
+                      ? '/spices' 
+                      : `/products/${category.slug}`;
+                  const isActive = location.pathname === categoryPath;
+                  
+                  return (
                     <Link
-                      to={`/${category.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
-                      className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-500 rounded-md"
+                      key={category.id}
+                      to={categoryPath}
+                      className={`block px-3 py-1.5 text-xs font-semibold rounded-md transition-colors truncate ${
+                        isActive 
+                          ? 'bg-blue-500 text-white' 
+                          : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                      }`}
                       onClick={() => {
                         onChangeIsProductsDropdownOpen();
                         setIsMenuOpen(false);
                       }}
                     >
-                      {category.name}
+                      {category.title}
                     </Link>
-                    
-                    <div className="pl-3 border-l border-gray-100 mt-1 space-y-1">
-                      {category.subcategories.map((subcategory) => (
-                        <Link
-                          key={subcategory}
-                          to={`/${category.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}/${subcategory.toLowerCase().replace(/ /g, '-')}`}
-                          className="block px-3 py-1 text-sm text-gray-600 hover:text-blue-500"
-                          onClick={() => {
-                            onChangeIsProductsDropdownOpen();
-                            setIsMenuOpen(false);
-                          }}
-                        >
-                          {subcategory}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>

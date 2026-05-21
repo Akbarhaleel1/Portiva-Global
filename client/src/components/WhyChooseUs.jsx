@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <div className="w-full bg-gray-50 pt-12 overflow-hidden relative z-10 mt-[-160px]">
+    <div className="w-full bg-gray-50 pt-12 overflow-hidden relative z-10">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">Why choose us?</h2>

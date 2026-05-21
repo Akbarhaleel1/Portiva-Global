@@ -153,21 +153,18 @@ const GzapAnimation = () => {
   ];
 
   useEffect(() => {
-    const lenis = new Lenis({
-      smooth: true,
-      direction: 'horizontal',
-    });
-
-    function raf(time) {
-      lenis.raf(time);
+    const updateScrollTrigger = () => {
       ScrollTrigger.update();
-      requestAnimationFrame(raf);
+    };
+
+    if (window.lenis) {
+      window.lenis.on('scroll', updateScrollTrigger);
     }
 
-    requestAnimationFrame(raf);
-
     return () => {
-      lenis.destroy();
+      if (window.lenis) {
+        window.lenis.off('scroll', updateScrollTrigger);
+      }
     };
   }, []);
 

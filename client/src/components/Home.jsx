@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import GzapAnimation from "./GzapAnimation";
 import ExportingProducts from "./ExportingProducts";
+import ProductCategoryGrid from "./ProductCategoryGrid";
 
 export default function ExportServicesUI() {
   const [isVisible, setIsVisible] = useState(false);
@@ -303,6 +304,10 @@ export default function ExportServicesUI() {
       {/* Exporting Products Section */}
       <div className="py-16 bg-gradient-to-br from-white to-blue-50" id=''>
         <ExportingProducts />
+      </div>
+
+      <div className="relative z-10 -mt-10" id="explore">
+        <ProductCategoryGrid />
       </div>
 
       <div>
