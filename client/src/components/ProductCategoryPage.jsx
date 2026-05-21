@@ -962,12 +962,12 @@ const ProductCategoryPage = () => {
   return (
     <div className="bg-white min-h-screen relative flex flex-col text-slate-800 font-sans">
       {/* Background image overlay with radial blur */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 via-white/95 to-slate-50/90 z-10"></div>
         <img
           src={coverImage}
           alt={category.title}
-          className="w-full h-full object-cover opacity-10 blur-md transform scale-105"
+          className="w-full h-full object-cover opacity-10 blur-md transform scale-115"
         />
       </div>
 

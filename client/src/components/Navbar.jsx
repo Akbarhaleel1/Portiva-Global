@@ -32,7 +32,7 @@ export default function Navbar({ isProductsDropdownOpen, onChangeIsProductsDropd
   };
 
   return (
-    <nav className="fixed w-full mt-[-45px] bg-white/90 backdrop-blur-md shadow-lg z-50 px-4 md:px-8 xl:px-16 transition-all duration-300">
+    <nav className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50 px-4 md:px-8 xl:px-16 transition-all duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Company Name */}
