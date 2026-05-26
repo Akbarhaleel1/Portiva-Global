@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Globe, Ship, Award, Users, Zap, Gift, ChevronRight } from 'lucide-react';
 import Navbar from './Navbar';
 import { User } from 'lucide-react';
+import portivaMdImg from '../assets/portivamd (1).png';
 
 export default function AboutUs() {
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
@@ -174,7 +175,7 @@ export default function AboutUs() {
               <div className="relative mb-6 md:mb-0 md:mr-8">
                 <div className="h-48 w-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
                   <img 
-                    src="https://i.ibb.co/d4yvmKrP/Screenshot-2025-08-31-151457.png" 
+                    src={portivaMdImg} 
                     alt="Manoj Surendran - Founder of Portiva Global" 
                     className="w-full h-full object-cover"
                   />
